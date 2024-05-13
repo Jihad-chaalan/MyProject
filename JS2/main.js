@@ -95,7 +95,14 @@ theAddButton.onclick = function (){
 
         //create the delete button text
         let deletetext = document.createTextNode("Delete");
-
+        //create the delete  All button text
+        if(!document.body.contains(document.querySelector('.DeleteAll'))){
+        let DelAll = document.createElement("span");
+        let deleteAll = document.createTextNode("Delete All Tasks");
+         DelAll.className = 'DeleteAll' ;
+         DelAll.appendChild(deleteAll);
+         tasksContainer.appendChild(DelAll);
+        }
         // Add textto span
         mainSpan.appendChild(text);
 
@@ -133,6 +140,16 @@ document.addEventListener('click' , function(e){
         if(tasksContainer.childElementCount == 0){
             createNoTasks();
         }
+    }
+    if (e.target.className == 'DeleteAll') {
+        //REMOVE All TASK
+      var elements = document.querySelectorAll('.task-box');
+      elements.forEach(function(element) {
+        element.remove();
+    });
+        createNoTasks();
+        e.target.remove();
+ 
     }
 
     //FINISH THE TASK

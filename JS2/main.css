@@ -8,6 +8,7 @@ body {
     width: 600px;
     margin: 30px auto 0;
     background-color: #f6f6f6;
+    position: relative;
 }
 .todo-container  .add-task{
     padding: 15px;
@@ -102,4 +103,18 @@ body {
 }
 .task-stats .tasks-completed span {
     background-color: #03a9f4;
+}
+
+.todo-container .task-content .DeleteAll{
+    position: absolute;
+    float: right;
+    background-color: #e91e63;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    bottom: -7px;
+    right: 0;
 }
