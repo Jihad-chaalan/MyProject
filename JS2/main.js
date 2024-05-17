@@ -103,6 +103,22 @@ theAddButton.onclick = function (){
          DelAll.appendChild(deleteAll);
          tasksContainer.appendChild(DelAll);
         }
+
+
+
+        if(!document.body.contains(document.querySelector('.finishAll'))){
+            //create finish all tasks
+            let finishAll = document.createElement('span');
+            let finishText = document.createTextNode("All Tasks are done");
+            finishAll.appendChild(finishText);
+            finishAll.className = 'finishAll';
+            tasksContainer.appendChild(finishAll);
+        }
+
+
+
+
+
         // Add textto span
         mainSpan.appendChild(text);
 
@@ -132,6 +148,7 @@ theAddButton.onclick = function (){
 };
 
 document.addEventListener('click' , function(e){
+
     //Delete Task
     if (e.target.className == 'delete') {
         //REMOVE CURRENT TASK
@@ -159,6 +176,13 @@ document.addEventListener('click' , function(e){
     }
 
     calculateTasks();
+    if(!document.body.contains(document.querySelector('.no-tasks-message')) ){
+       
+            console.log('here');
+            let element = document.querySelector('.finishAll');
+            element.remove();
+        
+    }
 
 });
 
