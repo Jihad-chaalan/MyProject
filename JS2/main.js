@@ -106,19 +106,6 @@ theAddButton.onclick = function (){
 
 
 
-        if(!document.body.contains(document.querySelector('.finishAll'))){
-            //create finish all tasks
-            let finishAll = document.createElement('span');
-            let finishText = document.createTextNode("All Tasks are done");
-            finishAll.appendChild(finishText);
-            finishAll.className = 'finishAll';
-            tasksContainer.appendChild(finishAll);
-        }
-
-
-
-
-
         // Add textto span
         mainSpan.appendChild(text);
 

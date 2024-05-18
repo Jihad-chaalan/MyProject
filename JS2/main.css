@@ -73,18 +73,7 @@ body {
 .todo-container .task-content span.task-box.finished {
     text-decoration: line-through;
 }
-.todo-container .task-content span.finishAll {
-    background-color: #03a9f4;
-    color: #fff;
-    position: absolute;
-    border-radius: 6px;
-    float: left;
-    bottom: -9px;
-    left: 0;
-    font-size: 12px;
-    padding: 5px;
-    cursor: pointer;
-}
+
 
 .task-stats {
     overflow: hidden;
