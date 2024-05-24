@@ -39,3 +39,31 @@ body {
     padding: 20px;
     background-color: #e0e0e0;
 }
+
+.repos-container .show-data .repo-box {
+    background-color: #fff;
+    padding: 15px;
+}
+.repos-container .show-data .repo-box:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.repos-container .show-data .repo-box a,
+.repos-container .show-data .repo-box span {
+    float: right;
+    margin-left: 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    width: 90px;
+    text-align: center;
+    padding: 4px;
+}
+
+.repos-container .show-data .repo-box a{
+    text-decoration: none;
+    background-color: #e91e63;
+}
+.repos-container .show-data .repo-box span{
+    background-color:#009688;
+}
