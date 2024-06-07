@@ -25,19 +25,14 @@ allSpans.forEach(span => {
 
 });
 
-function checkInput(){
-
-    
-        results.innerHTML = "Input can't Be Empty";
-        
-    
-
+function showMessage(){
+        results.innerHTML = "Input can't Be Empty";    
 }
 
 
 function checkItem(){
     if(theInput.value === ""){
-        checkInput();
+        showMessage();
     }
     else if(localStorage.getItem(theInput.value)){
 
@@ -51,16 +46,50 @@ function checkItem(){
 };
 function addItem(){
 
-    console.log("add");
+    if(theInput.value !== ""){
+        
+        localStorage.setItem(theInput.value,"Test");
+        results.innerHTML = `Local Storage Item <span>${theInput.value}</span> Added`;
+        theInput.value = ""; 
 
+    }else{
+        showMessage();
+    }
 };
 function deleteItem(){
 
-    console.log("delete");
+    if(theInput.value !== ""){
+        
+        if(localStorage.getItem(theInput.value)){
+
+            localStorage.removeItem(theInput.value);
+
+            results.innerHTML = `Found Local Item Called <span>${theInput.value}</span> Deleted`;
+            theInput.value = "";
+        } else {
+    
+            results.innerHTML = `No Local Storage Item Called <span>${theInput.value}</span>`;
+    
+        }
+
+    }else{
+        showMessage();
+    }
 
 };
 function showItem(){
 
-    console.log("show");
 
+    results.innerHTML = "";
+    if (localStorage.length) {
+
+        for(let [key,value] of Object.entries(localStorage)){
+
+            results.innerHTML += `<span class='keys'>${key}</span>`;
+        }
+
+
+    } else {
+        results.innerHTML = `Local Storage is empty`
+    }
 };
