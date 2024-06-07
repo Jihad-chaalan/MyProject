@@ -44,3 +44,6 @@ body {
     font-weight: bold;
     color: #009688;
 }
+.parent .results span .keys{
+    display: block;
+}
