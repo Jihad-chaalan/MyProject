@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="quiz-app">
+        <div class="quiz-info">
+            <div class="category">Category: <span>HTML</span></div>
+            <div class="count">Questions Count: <span>10</span></div>
+        </div>
+        <div class="quiz-area">
+            <h2>How Can We Make Element Text Bold</h2>
+        </div>
+        <div class="answers-area">
+            <div class="answer">
+                <input type="radio" id="answer1" name="questions" checked>
+                <label for="answer1">Putting it inside &lt;b&gt;tag</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer2" name="questions">
+                <label for="answer2">Putting it inside &lt;strong&gt; tag</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer3" name="questions">
+                <label for="answer3">font weight in css</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer4" name="questions">
+                <label for="answer4">All Answers are right</label>
+            </div>
+        </div>
+        <button class="submit-button">Submit</button>
+        <div class="bullets">
+            <div class="spans">
+                <span class="on"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="countdown">
+                <span class="minutes">02</span> : <span class="seconds">54</span> 
+            </div>
+        </div>
+        <div class="results"></div>
+    </div>
+</body>
+</html>

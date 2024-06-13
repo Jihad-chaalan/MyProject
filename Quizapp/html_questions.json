@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Why We Use <br> Element",
+        "answer_1": "To Make Text Bold",
+        "answer_2": "To Make Text italic",
+        "answer_3": "To add Break Line",
+        "answer_4": "To add horizantal Line",
+        "right_answer": "To add Break Line"
+    },
+    {
+        "title": "Is <img> Element Has Attribute href",
+        "answer_1": "yes",
+        "answer_2": "No it's for <a>",
+        "answer_3": "All Elements Has this attribute",
+        "answer_4": "answer 1 and 3 is right",
+        "right_answer": "No it's for <a>"
+    },
+    {
+        "title": "How Can We Make Element Text Bold ",
+        "answer_1": "Putting it inside <b> tag",
+        "answer_2": "Putting it inside <strong> tag",
+        "answer_3": "font weight in css",
+        "answer_4": "All Answers are right",
+        "right_answer": "All Answers are right"
+    },
+    {
+        "title": "In HTML Can We Use This Way To Add Attributes ",
+        "answer_1": "<div class='class-name'>",
+        "answer_2": "<div class= class-name>",
+        "answer_3": "<div class\"class-name\">",
+        "answer_4": "All Answers are right",
+        "right_answer": "All Answers are right"
+    }
+
+]
